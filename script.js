@@ -171,25 +171,60 @@ document.addEventListener('DOMContentLoaded', () => {
       const originalBtnText = submitBtn.innerHTML;
       submitBtn.disabled = true;
       submitBtn.innerHTML = '<span class="btn-spinner"></span> Sending...';
+
+
+
+
+
       
-      setTimeout(() => {
-        // Successful simulation
-        submitBtn.disabled = false;
-        submitBtn.innerHTML = originalBtnText;
-        
-        // Show success alert
-        formStatus.textContent = 'Thank you! Your message has been sent successfully. I will get back to you shortly.';
-        formStatus.classList.add('success');
-        
-        // Reset form
-        contactForm.reset();
-        
-        // Clear message after 5 seconds
-        setTimeout(() => {
-          formStatus.textContent = '';
-          formStatus.classList.remove('success');
-        }, 5000);
-      }, 1500);
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById('form-name').value.trim();
+  const email = document.getElementById('form-email').value.trim();
+  const subject = document.getElementById('form-subject').value.trim();
+  const message = document.getElementById('form-message').value.trim();
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+  if (!name || !email || !subject || !message) {
+    alert('Please fill out all fields.');
+    return;
+  }
+
+  const originalBtnText = submitBtn.innerHTML;
+  submitBtn.disabled = true;
+  submitBtn.innerHTML = "Sending...";
+
+  emailjs.send("service_0ytjqmt", "template_vyp13er", {
+    from_name: name,
+    from_email: email,
+    subject: subject,
+    message: message
+  })
+  .then(() => {
+    formStatus.textContent = "Message sent successfully!";
+    formStatus.classList.add("success");
+    contactForm.reset();
+  })
+  .catch((error) => {
+    console.error(error);
+    formStatus.textContent = "Failed to send message.";
+  })
+  .finally(() => {
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = originalBtnText;
+  });
+});
+
+
+
+
+
+
+
+    
+
+     
     });
   }
   
