@@ -176,7 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-      
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
@@ -215,7 +214,6 @@ contactForm.addEventListener('submit', (e) => {
     submitBtn.innerHTML = originalBtnText;
   });
 });
-
 
 
 
