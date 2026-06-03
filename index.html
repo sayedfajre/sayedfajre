@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayed Adel | C# Desktop Application & Database Developer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Portfolio of Sayed Adel Sayed Fajry, C# Desktop Application Developer & SQL Server Specialist. Designing high-performance POS systems, database-driven desktop apps, and robust business solutions.">
+  <meta name="keywords"
+    content="C#, .NET, Windows Forms, SQL Server, ADO.NET, POS Developer, Desktop Application, Sayed Adel, Sayed Fajry">
+  <meta name="author" content="Sayed Adel Sayed Fajry">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        <span>Sayed</span>Adel
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+          <i data-lucide="moon" class="moon-icon"></i>
+          <i data-lucide="sun" class="sun-icon"></i>
+        </button>
+
+        <!-- Hamburger Menu for Mobile -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section id="hero" class="section">
+    <div class="bg-grid"></div>
+    <div class="bg-blob" style="top: 10%; right: 5%;"></div>
+    <div class="container grid-2">
+      <div class="hero-content reveal">
+        <span class="hero-subtitle">C# & SQL Server Specialist</span>
+        <h1 class="hero-title">Sayed Adel <br>Sayed Fajry</h1>
+        <p class="hero-description">
+          I design and develop robust desktop applications, custom POS systems, and enterprise relational database
+          architectures using C#, Windows Forms, and SQL Server.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View Projects <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Contact Me <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper reveal delay-200">
+        <div class="hero-image-glow"></div>
+        <div class="hero-image-container">
+          <!-- Main profile image -->
+          <img src="assets/profile_real.jpg" alt="Sayed Adel Sayed Fajry" id="profile-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ABOUT ME & OBJECTIVE SECTION
+       ========================================================================== -->
+  <section id="about" class="section">
+    <div class="bg-blob" style="bottom: 10%; left: 5%;"></div>
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+
+      <div class="grid-2">
+        <div class="about-text reveal">
+          <p>
+            I am a self-taught, dedicated software developer specializing in the .NET desktop ecosystem. With solid
+            expertise in <strong>C#</strong>, <strong>Windows Forms</strong>, and <strong>Microsoft SQL Server</strong>,
+            I focus on building high-performance, fault-tolerant business software.
+          </p>
+          <p>
+            My development philosophy centers on code quality, user experience, and transaction safety. Over the course
+            of my independent development career, I have successfully designed, built, and deployed scalable database
+            systems—such as my flagship <strong>Kashvix POS System</strong>—that help businesses streamline their daily
+            operations with maximum efficiency and zero downtime.
+          </p>
+
+          <div class="about-meta">
+            <div class="meta-item">
+              <div class="meta-icon">
+                <i data-lucide="briefcase"></i>
+              </div>
+              <div class="meta-content">
+                <span>Role</span>
+                <strong>Desktop Developer</strong>
+              </div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-icon">
+                <i data-lucide="database"></i>
+              </div>
+              <div class="meta-content">
+                <span>Primary DB</span>
+                <strong>SQL Server</strong>
+              </div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-icon">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="meta-content">
+                <span>Phone</span>
+                <strong>01050061643</strong>
+              </div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="meta-content">
+                <span>Email</span>
+                <strong>sayedfajre.00@gmail.com</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Me Profile Image -->
+        <div class="reveal delay-200 about-image-wrapper">
+          <div class="about-image-container">
+            <img src="assets/profile_real.jpg" alt="Sayed Adel Sayed Fajry" class="about-profile-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Career Objective Section full width -->
+      <div class="reveal delay-300" style="margin-top: 3.5rem;">
+        <div class="objective-box">
+          <h3><i data-lucide="target"></i> Career Objective</h3>
+          <p>
+            "To architect and deploy scalable, professional desktop business solutions that optimize real-world
+            operations, delivering peak runtime performance, structural data integrity, and high transactional
+            reliability."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SKILLS SECTION
+       ========================================================================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Technical Skills</h2>
+
+      <div class="grid-3">
+        <!-- Category 1: Languages & UI -->
+        <div class="skills-category reveal">
+          <div class="category-title">
+            <i data-lucide="code-2"></i>
+            <h3>Languages & Frameworks</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag"><i data-lucide="terminal"></i> C#</span>
+            <span class="skill-tag"><i data-lucide="cpu"></i> .NET Framework</span>
+            <span class="skill-tag"><i data-lucide="layout"></i> Windows Forms</span>
+            <span class="skill-tag"><i data-lucide="link"></i> ADO.NET</span>
+            <span class="skill-tag"><i data-lucide="layers"></i> Entity Framework</span>
+          </div>
+        </div>
+
+        <!-- Category 2: Databases & Management -->
+        <div class="skills-category reveal delay-100">
+          <div class="category-title">
+            <i data-lucide="database"></i>
+            <h3>Database Development</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag"><i data-lucide="database-backup"></i> SQL Server</span>
+            <span class="skill-tag"><i data-lucide="table"></i> Relational Design</span>
+            <span class="skill-tag"><i data-lucide="zap"></i> Query Optimization</span>
+            <span class="skill-tag"><i data-lucide="shield-check"></i> Transaction Safety</span>
+            <span class="skill-tag"><i data-lucide="share-2"></i> Multi-Node Setup</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Tools & Methodology -->
+        <div class="skills-category reveal delay-200">
+          <div class="category-title">
+            <i data-lucide="settings"></i>
+            <h3>Tools & Practices</h3>
+          </div>
+          <div class="skills-list">
+            <span class="skill-tag"><i data-lucide="git-branch"></i> Git / Version Control</span>
+            <span class="skill-tag"><i data-lucide="help-circle"></i> Problem Solving</span>
+            <span class="skill-tag"><i data-lucide="activity"></i> System Optimization</span>
+            <span class="skill-tag"><i data-lucide="refresh-cw"></i> Backup & Recovery</span>
+            <span class="skill-tag"><i data-lucide="hard-drive"></i> Local DBMS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROJECTS SECTION
+       ========================================================================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div class="grid-2">
+        <!-- Project 1: Kashvix POS -->
+        <div class="project-card reveal">
+          <a href="http://www.youtube.com/@sayed-fajre" target="_blank" class="project-image-placeholder"
+            aria-label="View Kashvix POS Demo">
+            <img src="assets/kashvix_logo.png" alt="Kashvix POS Logo" class="project-card-logo">
+          </a>
+          <div class="project-content">
+            <h3 class="project-title">Kashvix POS System</h3>
+            <p class="project-description">
+              An advanced, production-ready Point of Sale (POS) system developed for retail enterprises, focusing on
+              transactional integrity and high-speed offline capabilities.
+            </p>
+            <ul class="project-bullets">
+              <li>Designed and built a multi-device local network database synchronization system using SQL Server.</li>
+              <li>Implemented power-failure transaction safety protocols to prevent invoice database corruption.</li>
+              <li>Developed instant barcode product scanning and automated dynamic inventory deductions.</li>
+              <li>Generated comprehensive sales charts and PDF reports using local dataset components.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Windows Forms</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">ADO.NET</span>
+              <span class="tech-tag">Network DB</span>
+            </div>
+            <div class="project-links">
+              <a href="http://www.youtube.com/@sayed-fajre" target="_blank" class="project-link-btn" id="kashvix-demo">
+                <i data-lucide="youtube"></i> Demo Video
+              </a>
+              <a href="http://www.youtube.com/@sayed-fajre" target="_blank" class="project-link-btn"
+                id="kashvix-channel">
+                <i data-lucide="tv"></i> YouTube Channel
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Custom DBMS -->
+        <div class="project-card reveal delay-200">
+          <div class="project-image-placeholder">
+            <i data-lucide="database-zap"></i>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Database Management Utility</h3>
+            <p class="project-description">
+              A comprehensive standalone administration tool built for small-to-medium business owners to perform
+              automated database backups, database restoration, and server monitoring.
+            </p>
+            <ul class="project-bullets">
+              <li>Created an automated system hot-backup scheduler requiring zero server downtime.</li>
+              <li>Developed one-click point-in-time recovery and verification routines.</li>
+              <li>Built local connection-string encryption models and user level permission panels.</li>
+              <li>Implemented index fragmentation analysis and automatic database log shrinking.</li>
+            </ul>
+            <div class="project-tech">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">SQL Server</span>
+              <span class="tech-tag">SMO Engine</span>
+              <span class="tech-tag">Windows Forms</span>
+              <span class="tech-tag">Security APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="http://www.youtube.com/@sayed-fajre" target="_blank" class="project-link-btn" id="dbms-demo">
+                <i data-lucide="youtube"></i> Channel Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       EXPERIENCE SECTION (TIMELINE)
+       ========================================================================== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Professional Experience</h2>
+
+      <div class="timeline">
+        <!-- Experience Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3 class="timeline-role">C# Desktop & SQL Server Developer</h3>
+              <div class="timeline-company">Self-Employed / Independent Contractor</div>
+              <span class="timeline-date">2025 - Present</span>
+            </div>
+            <ul>
+              <li>Programmed custom business desktop software using C# and WinForms, translating complex logic into
+                intuitive user interfaces.</li>
+              <li>Architected normalized database models in SQL Server with strict transaction locks to maintain 100%
+                data integrity.</li>
+              <li>Built network synchronization systems allowing multiple local terminals to query and write to a
+                central database concurrently.</li>
+              <li>Designed automated administrative recovery tools, including encrypted credentials, backups, and error
+                log monitors.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES SECTION
+       ========================================================================== -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Services I Offer</h2>
+
+      <div class="grid-3">
+        <!-- Service 1: Desktop Apps -->
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i data-lucide="laptop"></i>
+          </div>
+          <h3 class="service-title">Desktop Application Development</h3>
+          <p class="service-description">
+            Building reliable, high-speed C# desktop applications built for the Windows ecosystem, supporting extensive
+            offline use, custom UI controls, and local hardware integrations.
+          </p>
+        </div>
+
+        <!-- Service 2: POS Systems -->
+        <div class="service-card reveal delay-100">
+          <div class="service-icon">
+            <i data-lucide="receipt"></i>
+          </div>
+          <h3 class="service-title">POS System Development</h3>
+          <p class="service-description">
+            Creating custom, modular Point of Sale business systems with receipt printing, instant inventory updates,
+            barcode reading, multi-cashier permissions, and interactive analytics.
+          </p>
+        </div>
+
+        <!-- Service 3: DB Design -->
+        <div class="service-card reveal delay-200">
+          <div class="service-icon">
+            <i data-lucide="file-spreadsheet"></i>
+          </div>
+          <h3 class="service-title">SQL Server Solutions</h3>
+          <p class="service-description">
+            Designing highly optimized relational databases. Designing custom stored procedures, index fine-tuning,
+            automatic replication, backup schedules, and multi-user configurations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACT SECTION
+       ========================================================================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Get In Touch</h2>
+
+      <div class="contact-layout">
+        <!-- Contact Details -->
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            Have a project in mind, need database design assistance, or want to discuss a C# desktop software
+            development opportunity? Feel free to reach out using the form or direct links below.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="phone"></i>
+              </div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <div class="contact-value"><a href="tel:01050061643">01050061643</a></div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <div class="contact-value"><a href="mailto:sayedfajre.00@gmail.com">sayedfajre.00@gmail.com</a></div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="youtube"></i>
+              </div>
+              <div>
+                <span class="contact-label">Project Demo</span>
+                <div class="contact-value"><a href="http://www.youtube.com/@sayed-fajre" target="_blank">View Video
+                    Demo</a></div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i data-lucide="tv"></i>
+              </div>
+              <div>
+                <span class="contact-label">My Channel</span>
+                <div class="contact-value"><a href="http://www.youtube.com/@sayed-fajre"
+                    target="_blank">@sayed-fajre</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container reveal delay-200">
+          <form id="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Full Name</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Email Address</label>
+              <input type="email" id="form-email" class="form-input" placeholder="name@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-subject" class="form-label">Subject</label>
+              <input type="text" id="form-subject" class="form-input" placeholder="Project Inquiry" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-message" class="form-label">Message</label>
+              <textarea id="form-message" class="form-input" placeholder="Hi, I would like to discuss..."
+                required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+              Send Message <i data-lucide="send"></i>
+            </button>
+
+            <!-- Success Status Message -->
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer>
+    <div class="container footer-content">
+      <a href="#hero" class="logo">
+        <span>Sayed</span>Adel
+      </a>
+
+      <div class="footer-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <p>&copy; <span id="footer-year">2026</span> Sayed Adel Sayed Fajry. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <!-- Lucide Icons Library & Script Injection -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    // Initialize Lucide icons on HTML load
+    lucide.createIcons();
+  </script>
+
+  <!-- Custom JS Script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
