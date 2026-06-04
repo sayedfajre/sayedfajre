@@ -176,49 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const contactForm = document.getElementById('contact-form');
-const formStatus = document.getElementById('form-status');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const name = document.getElementById('form-name').value.trim();
-    const email = document.getElementById('form-email').value.trim();
-    const subject = document.getElementById('form-subject').value.trim();
-    const message = document.getElementById('form-message').value.trim();
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-
-    if (!name || !email || !subject || !message) {
-      alert('Please fill out all fields.');
-      return;
-    }
-
-    const originalBtnText = submitBtn.innerHTML;
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = "Sending...";
-
-    emailjs.send("service_0ytjqmt", "template_vyp13er", {
-      from_name: name,
-      from_email: email,
-      subject: subject,
-      message: message
-    })
-    .then(() => {
-      formStatus.textContent = "Message sent successfully!";
-      formStatus.classList.add("success");
-      contactForm.reset();
-    })
-    .catch((error) => {
-      console.error(error);
-      formStatus.textContent = "Failed to send message.";
-    })
-    .finally(() => {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalBtnText;
-    });
-  });
-}
 
 
 
