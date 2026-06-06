@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sayedfajre.github.io/sayedfajre/sitemap.xml
